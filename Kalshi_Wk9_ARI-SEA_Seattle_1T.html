@@ -1,0 +1,147 @@
+<!doctype html>
+<!-- Kalshi FREE55 Sunday 1-tap | Week 9 ARI@SEA | headline: Seattle YES 85c (midpoint of Kalshi bid/ask) | price snapshot 2026-10-30 05:57 UTC | expires after kickoff -->
+<html lang="en"><head><script src="mraid.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Kalshi — Seattle · Sunday</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0}
+:root{--u:1;--bg:#07100c;--ink:#F3F8F5;--mut:#8DA79A;--mint:#19E08E;--deep:#06231A;--coral:#FF6B63}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);-webkit-user-select:none;user-select:none;
+ font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+#stage{position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;text-align:center;
+ display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;
+ -webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;align-items:center;
+ padding:calc(var(--u)*28px) calc(var(--u)*24px) calc(var(--u)*8px);
+ background:radial-gradient(110% 36% at 50% 0%,rgba(25,224,142,.11),rgba(25,224,142,0) 70%),linear-gradient(180deg,#0b1812 0,#07100c 62%)}
+.blk{width:100%;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;align-items:center}
+#logo{height:calc(var(--u)*26px);width:auto;display:block}#logo path{fill:var(--mint)}
+#pill{margin-top:calc(var(--u)*14px);padding:calc(var(--u)*8px) calc(var(--u)*16px);border-radius:999px;background:rgba(25,224,142,.10);border:1px solid rgba(25,224,142,.42);font-size:calc(var(--u)*14px);font-weight:700;color:#DDF5EA;white-space:nowrap}
+#pill b{color:var(--mint);font-weight:800;letter-spacing:.05em}
+#will{font-size:calc(var(--u)*19px);font-weight:600;color:var(--mut)}
+.fitrow{width:100%;white-space:nowrap;overflow:hidden;text-align:center}
+#team{font-size:calc(var(--u)*58px);line-height:1.08;font-weight:800;letter-spacing:-.025em;color:var(--ink)}
+#vs{font-size:calc(var(--u)*19px);font-weight:600;color:#C5DACF}
+#odds{font-size:calc(var(--u)*13px);color:var(--mut);letter-spacing:.02em}
+#bar{width:100%;max-width:calc(var(--u)*330px);height:calc(var(--u)*5px);border-radius:3px;background:rgba(255,107,99,.5);overflow:hidden;margin-top:calc(var(--u)*8px)}
+#barYes{height:100%;background:var(--mint)}
+#picks{width:100%;max-width:calc(var(--u)*330px);margin-top:calc(var(--u)*16px);display:-webkit-box;display:-webkit-flex;display:flex}
+.pick{-webkit-box-flex:1;-webkit-flex:1;flex:1;height:calc(var(--u)*92px);margin:0 calc(var(--u)*6px);border-radius:calc(var(--u)*20px);border:1.5px solid;font:inherit;cursor:pointer;
+ display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;
+ -webkit-transition:transform .15s ease,opacity .2s ease,background .2s ease,color .2s ease,border-color .2s ease;transition:transform .15s ease,opacity .2s ease,background .2s ease,color .2s ease,border-color .2s ease}
+.pick em{font-style:normal;font-size:calc(var(--u)*13px);font-weight:700;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.pick span{font-size:calc(var(--u)*36px);font-weight:800;letter-spacing:-.02em;margin-top:calc(var(--u)*2px)}
+#yes{background:rgba(25,224,142,.09);border-color:rgba(25,224,142,.5);color:var(--mint)}
+#no{background:rgba(255,107,99,.09);border-color:rgba(255,107,99,.5);color:var(--coral)}
+#yes.sel{background:var(--mint);border-color:var(--mint);color:var(--deep)}
+#no.sel{background:var(--coral);border-color:var(--coral);color:#2A0C0A}
+.pick.dim{opacity:.35}.pick:active{-webkit-transform:scale(.98);transform:scale(.98)}
+#payout{margin-top:calc(var(--u)*16px);font-size:calc(var(--u)*15px);color:var(--mut);min-height:calc(var(--u)*26px)}
+#payout b{color:var(--mint);font-size:calc(var(--u)*22px);font-weight:800;margin:0 3px}#payout.on{color:#DCEFE6}
+#cta{margin-top:calc(var(--u)*12px);width:100%;max-width:calc(var(--u)*330px);height:calc(var(--u)*54px);border:0;border-radius:999px;font:inherit;font-size:calc(var(--u)*18px);font-weight:800;color:var(--deep);background:var(--mint);cursor:pointer;box-shadow:0 6px 20px rgba(25,224,142,.2)}
+#legal{width:100%;margin-top:calc(var(--u)*14px);font-size:8.5px;line-height:1.38;color:rgba(200,222,211,.5);padding:0 1%}
+/* ---- motion layer: transform/opacity only; base state is always the finished, visible layout (no-JS / reduced-motion safe) ---- */
+#glow{position:absolute;left:50%;top:30%;width:150%;height:46%;margin-left:-75%;margin-top:-23%;pointer-events:none;z-index:0;
+ background:radial-gradient(closest-side,rgba(25,224,142,.15),rgba(25,224,142,0));animation:drift 16s ease-in-out infinite alternate}
+.blk,#legal{position:relative;z-index:1}
+#team{display:inline-block}
+.pick{position:relative}
+#cta{position:relative;overflow:hidden}
+#cta:after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:36%;background:linear-gradient(100deg,rgba(255,255,255,0),rgba(255,255,255,.5),rgba(255,255,255,0));transform:skewX(-20deg);animation:shine 4s ease-in-out 2.6s infinite}
+@keyframes drift{0%{transform:translate(-9%,-4%) scale(1)}100%{transform:translate(9%,5%) scale(1.18)}}
+@keyframes shine{0%{left:-60%}38%,100%{left:135%}}
+@keyframes rise{from{opacity:0;transform:translateY(calc(var(--u)*14px))}to{opacity:1;transform:none}}
+@keyframes drop{from{opacity:0;transform:translateY(calc(var(--u)*-10px))}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes heroin{0%{opacity:0;transform:translateY(calc(var(--u)*20px)) scale(.94);filter:blur(7px)}60%{filter:blur(0)}100%{opacity:1;transform:none;filter:blur(0)}}
+@keyframes grow{from{width:0}}
+@keyframes spring{0%{opacity:0;transform:translateY(calc(var(--u)*24px)) scale(.92)}60%{opacity:1;transform:translateY(calc(var(--u)*-3px)) scale(1.02)}100%{opacity:1;transform:none}}
+@keyframes popsel{0%{transform:scale(1)}40%{transform:scale(1.07)}100%{transform:scale(1)}}
+@keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
+@keyframes soft{50%{transform:scale(1.02)}}
+@keyframes ring{0%{opacity:.75;transform:scale(1)}100%{opacity:0;transform:scale(1.16)}}
+#stage.play #logo{animation:drop .6s cubic-bezier(.2,.8,.2,1) both}
+#stage.play #pill{animation:rise .6s cubic-bezier(.2,.8,.2,1) .12s both}
+#stage.play #will{animation:fade .6s ease .3s both}
+#stage.play #team{animation:heroin .85s cubic-bezier(.2,.9,.2,1) .38s both}
+#stage.play #vs{animation:fade .6s ease .66s both}
+#stage.play #odds,#stage.play #bar{animation:fade .5s ease .78s both}
+#stage.play #barYes{animation:grow 1s cubic-bezier(.2,.8,.2,1) .85s both}
+#stage.play #yes{animation:spring .65s cubic-bezier(.2,1.1,.4,1) .95s both}
+#stage.play #no{animation:spring .65s cubic-bezier(.2,1.1,.4,1) 1.07s both}
+#stage.play #payout{animation:fade .5s ease 1.2s both}
+#stage.play #cta{animation:rise .6s cubic-bezier(.2,.8,.2,1) 1.3s both}
+#stage.play #legal{animation:fade .8s ease 1.5s both}
+#stage.nudge .pick:after{content:"";position:absolute;top:-1.5px;left:-1.5px;right:-1.5px;bottom:-1.5px;border-radius:inherit;border:1.5px solid currentColor;opacity:0;pointer-events:none;animation:ring 1.8s ease-out infinite}
+#stage.nudge #no:after{animation-delay:.9s}
+#stage.nudge #yes,#stage.nudge #no{animation:soft 1.8s ease-in-out infinite}#stage.nudge #no{animation-delay:.9s}
+#stage #yes.pop,#stage #no.pop{animation:popsel .38s cubic-bezier(.3,1.4,.5,1) both}
+#stage #cta.ready{animation:bump .4s ease both,soft 1.9s ease-in-out .5s infinite}
+.swap{animation:rise .4s cubic-bezier(.2,.8,.2,1) both}
+/* phone held sideways (or touch tablet): two columns */
+@media (orientation:landscape) and (max-height:559px),(orientation:landscape) and (pointer:coarse){
+ #stage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto 1fr auto;-webkit-box-align:center;-webkit-align-items:center;align-items:center;justify-items:center;-webkit-column-gap:3%;column-gap:3%;padding:calc(var(--u)*12px) 3% calc(var(--u)*4px)}
+ #top{grid-column:1;grid-row:1}#mid{grid-column:1;grid-row:2;margin-top:calc(var(--u)*10px)}#bot{grid-column:2;grid-row:1 / 4}
+ #legal{grid-column:1 / 3;grid-row:4;font-size:7.5px;margin-top:2px}
+}
+/* desktop browser (mouse, big window): centered 9:16 phone column. Touch devices never match. */
+@media (orientation:landscape) and (min-height:560px) and (pointer:fine){
+ html,body{background:#040806}
+ #stage{left:50%;right:auto;width:56.25vh;-webkit-transform:translateX(-50%);transform:translateX(-50%);box-shadow:0 0 0 1px #1b2822,0 24px 70px rgba(0,0,0,.65)}
+ #legal{font-size:calc(var(--u)*8.5px)}
+}
+@media (prefers-reduced-motion:reduce){*{-webkit-animation:none!important;animation:none!important}}
+</style></head><body>
+<div id="stage">
+ <div id="glow"></div>
+ <div class="blk" id="top"><svg id="logo" viewBox="0 0 772 226" xmlns="http://www.w3.org/2000/svg" aria-label="Kalshi"><path d="M255.677 58.1911C210.683 58.1911 183.381 78.5114 181.206 113.922H228.062C229.924 100.374 238.611 93.2917 253.814 93.2917C269.018 93.2917 277.396 100.064 277.088 110.842C276.775 119.156 271.501 122.852 258.16 124.7L238.923 127.164C195.484 132.398 175.002 148.717 175.002 177.967C175.002 207.218 195.48 226 229.611 226C251.331 226 267.776 218.302 278.017 203.522V222.61H326.422V117.924C326.422 78.5114 302.532 58.1911 255.677 58.1911ZM245.44 192.437C231.478 192.437 223.72 186.281 223.72 174.887C223.72 164.109 230.545 158.875 249.473 156.105L258.16 154.873C265.845 153.8 272.17 152.274 277.396 150.131V166.267C277.396 181.663 264.368 192.437 245.44 192.437ZM343.488 3.38607H393.135V222.61H343.488V3.38607ZM105.23 105.628L179.66 222.61H115.118L54.3009 121.934V222.61H0V3.38607H54.3009V99.102L119.464 3.38607H177.489L105.23 105.628ZM716.145 26.1705C716.145 12.0062 728.557 0 744.073 0C759.588 0 772 12.0062 772 26.1705C772 40.3347 759.588 52.3409 744.073 52.3409C728.557 52.3409 716.145 40.6407 716.145 26.1705ZM544.868 172.423C544.868 208.446 518.494 225.996 474.743 225.996C430.991 225.996 403.997 206.908 402.447 172.113H448.369C450.232 185.351 456.435 192.743 474.434 192.743C489.95 192.743 497.395 186.587 497.395 177.347C497.395 168.107 488.396 163.489 465.747 160.107C422.616 154.257 405.242 141.631 405.242 109.304C405.242 75.1293 436.582 58.1911 471.643 58.1911C509.186 58.1911 536.493 71.4293 540.218 108.688H495.225C493.054 96.9877 486.225 91.1376 471.951 91.1376C458.61 91.1376 451.161 97.2937 451.161 105.608C451.161 114.844 458.61 118.23 480.638 121.31C523.148 127.16 544.868 137.934 544.868 172.423ZM719.249 61.5771H768.896V222.61H719.249V61.5771ZM702.183 115.77V222.61H652.536V124.39C652.536 107.146 645.399 98.2197 629.884 98.2197C614.368 98.2197 603.51 108.072 603.51 127.47V222.61H553.863V3.38607H603.51V85.5617C611.32 70.1734 627.761 58.1911 651.603 58.1911C681.393 58.1911 702.179 76.9734 702.179 115.766L702.183 115.77Z"/></svg><div id="pill">Trade $25, get $55 &middot; Code <b>FREE55</b></div></div>
+ <div class="blk" id="mid"><div id="will">Will</div><div class="fitrow" id="teamRow"><span id="team">Seattle</span></div><div class="fitrow" id="vsRow"><span id="vs">win vs Arizona on Sunday?</span></div></div>
+ <div class="blk" id="bot"><div id="odds"><span id="oddsTxt">Market says 85% YES</span></div><div id="bar"><div id="barYes" style="width:85%"></div></div>
+  <div id="picks"><button class="pick" id="yes"><em>Yes</em><span id="yesP">85&cent;</span></button><button class="pick" id="no"><em>No</em><span id="noP">15&cent;</span></button></div>
+  <div id="payout"><span id="payIn">Tap a side to see what $10 pays</span></div><button id="cta">Trade on Kalshi</button></div>
+ <div id="legal">18+ only. Restrictions and eligibility requirements apply. Trading event contracts and trading leveraged products, including perpetual futures, involves significant risk and is not appropriate for everyone. Please carefully consider if it is appropriate for you in light of your personal financial circumstances. Kalshi products are not available in all jurisdictions. See kalshi.com/regulatory for more information. Market information may not reflect current prices or available trading opportunities. Prices are subject to change. Certain limitations apply. The offer is available to new users only, subject to the terms and conditions at kalshi.com/tc/55</div>
+</div>
+<script>
+/* Kalshi FREE55 Sunday 1-tap. Price below = midpoint of Kalshi bid/ask for "Seattle to win" (ARI @ SEA), snapshot 2026-10-30 05:57 UTC. Static, not live. MRAID 3.0, ES5. */
+(function(){"use strict";
+ var TEAM="Seattle",YES=85;
+ var STORE={ios:"https://apps.apple.com/us/app/kalshi/id1632713844",android:"https://play.google.com/store/apps/details?id=com.kalshi.mobile"};
+ function openStore(){var u=STORE[/iPhone|iPad|iPod/i.test(navigator.userAgent||"")?"ios":"android"];
+  if(typeof mraid!=="undefined"&&mraid&&typeof mraid.open==="function"){mraid.open(u);}else if(window.open){window.open(u,"_blank");}}
+ var st=document.getElementById("stage"),yes=document.getElementById("yes"),no=document.getElementById("no"),pay=document.getElementById("payout"),cta=document.getElementById("cta");
+ var payIn=document.getElementById("payIn"),sel=null,taps=0,started=false,nt=null,nudging=false;
+ var playing=false;
+ function cls(){st.className=(playing?"play":"")+(nudging?" nudge":"");}
+ function swapIn(el){el.className="";void el.offsetWidth;el.className="swap";}
+ function countTo(el,to,ms){var t0=Date.now();
+  function fin(){el.innerHTML="$"+to.toFixed(2);}
+  (function step(){var p=Math.min(1,(Date.now()-t0)/ms),e=1-Math.pow(1-p,3);
+   if(p<1){el.innerHTML="$"+(to*e).toFixed(2);setTimeout(step,24);}else{fin();}})();
+  setTimeout(fin,ms+120);}   /* guarantee: even if timers are throttled, the real amount always lands */
+ function scale(){var w=window.innerWidth,h=window.innerHeight,u,max=1.12;
+  var framed=!!(window.matchMedia&&window.matchMedia("(orientation:landscape) and (min-height:560px) and (pointer:fine)").matches);
+  if(framed){w=h*9/16;u=Math.min(w/375,h/760);max=1.4;}
+  else if(w>h){u=Math.min(h/330,w/760);}else{u=Math.min(w/375,(h-96)/640);}
+  u=Math.max(.55,Math.min(max,u));document.documentElement.style.setProperty("--u",u);fit();}
+ function fitEl(row){var s=row.firstChild;if(!s)return;var base,i=0;
+  s.style.fontSize="";base=parseFloat(window.getComputedStyle(s).fontSize);
+  while(s.offsetWidth>row.clientWidth-2&&base>9&&i<80){base-=1;s.style.fontSize=base+"px";i++;}}
+ function fit(){fitEl(document.getElementById("teamRow"));fitEl(document.getElementById("vsRow"));}
+ function payoutFor(side){var c=side==="YES"?YES:100-YES;return {c:c,amt:(10/(c/100)).toFixed(2)};}
+ function show(){var p=payoutFor(sel);
+  payIn.innerHTML="$10 on "+sel+" pays <b id='amt'>$0.00</b> if you&rsquo;re right";pay.className="on";swapIn(payIn);
+  countTo(document.getElementById("amt"),parseFloat(p.amt),650);
+  cta.innerHTML="Trade "+sel+" at "+p.c+"&cent;";cta.className="";void cta.offsetWidth;cta.className="ready";}
+ function pick(side){if(!started)return;if(nt){clearTimeout(nt);nt=null;}nudging=false;cls();taps++;
+  if(sel!==side){sel=side;yes.className="pick"+(side==="YES"?" sel pop":" dim");no.className="pick"+(side==="NO"?" sel pop":" dim");show();if(taps>=3)openStore();}
+  else{openStore();}}
+ function start(){if(started)return;started=true;scale();playing=true;cls();
+  nt=setTimeout(function(){if(!sel){nudging=true;cls();}},2300);
+  setTimeout(function(){playing=false;cls();},2600);}
+ yes.addEventListener("click",function(){pick("YES");},false);
+ no.addEventListener("click",function(){pick("NO");},false);
+ cta.addEventListener("click",function(){if(started)openStore();},false);
+ window.addEventListener("resize",scale,false);
+ function onView(v){if(v){started?null:start();}}
+ function ready(){mraid.addEventListener("viewableChange",onView);if(mraid.isViewable())start();}
+ scale();
+ if(typeof mraid==="undefined"){start();}else if(mraid.getState()==="loading"){mraid.addEventListener("ready",ready);}else{ready();}
+})();
+</script></body></html>
