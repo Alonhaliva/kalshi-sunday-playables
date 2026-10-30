@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Kalshi FREE55 Sunday 1-tap, app-UI | Week 9 GB@NE | New England YES 57c / Green Bay YES 45c (midpoints of Kalshi bid/ask) + real hourly history | price snapshot 2026-10-30 17:17 UTC | expires after kickoff -->
+<html lang="en"><head><script src="mraid.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Kalshi — New England · Sunday</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0}
+:root{--u:1;--ta:#E8485D;--tb:#34C768;--bg:#080A0D;--ink:#F4F6F7;--mut:#8A929A;--line:#1B2026;--g:#22CB95;--deep:#04140D;--r:#EF3354;
+ --cond:"HelveticaNeue-CondensedBold","Helvetica Neue Condensed","Roboto Condensed","sans-serif-condensed","Arial Narrow",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);-webkit-user-select:none;user-select:none;
+ font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+#stage{position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;text-align:left;background:var(--bg);
+ display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;
+ -webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;
+ padding:calc(var(--u)*20px) calc(var(--u)*18px) calc(var(--u)*8px)}
+.blk{width:100%;position:relative}
+#logo{height:calc(var(--u)*24px);width:auto;display:block}#logo path{fill:var(--g)}
+#promo{margin-top:calc(var(--u)*20px);padding:calc(var(--u)*8px) calc(var(--u)*12px);border-radius:calc(var(--u)*10px);background:rgba(34,203,149,.09);border:1px solid rgba(34,203,149,.32);font-size:calc(var(--u)*13px);font-weight:600;color:#D9F4EA;text-align:center;white-space:nowrap}
+#promo b{color:var(--g);font-weight:800;letter-spacing:.05em}
+.cond{font-family:var(--cond);font-weight:700;letter-spacing:-.005em}
+.fitrow{width:100%;white-space:nowrap;overflow:hidden}
+#title{font-size:calc(var(--u)*31px);line-height:1.12;color:var(--ink);display:inline-block}
+#sub{font-size:calc(var(--u)*12.5px);color:var(--mut);margin-top:calc(var(--u)*1px)}
+#chart{position:relative;height:calc(var(--u)*150px);margin-top:calc(var(--u)*8px)}
+#cap{position:absolute;left:0;top:0;font-size:calc(var(--u)*10.5px);color:var(--mut);letter-spacing:.02em}
+#plot{position:absolute;left:0;right:calc(var(--u)*86px);top:0;bottom:0;width:calc(100% - var(--u)*86px);height:100%}
+#plot line{stroke:#232A31;stroke-width:1;stroke-dasharray:2 4;vector-effect:non-scaling-stroke}
+#plot path{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.dot{position:absolute;width:calc(var(--u)*8px);height:calc(var(--u)*8px);border-radius:50%;right:calc(var(--u)*86px);margin:calc(var(--u)*-4px) calc(var(--u)*-4px) 0 0;box-shadow:0 0 0 calc(var(--u)*3px) rgba(8,10,13,.9)}
+.lab{position:absolute;right:0;width:calc(var(--u)*80px);line-height:1}
+.lab i{display:block;font-style:normal;font-size:calc(var(--u)*11.5px);font-weight:700;letter-spacing:.08em}
+.lab b{display:block;font-size:calc(var(--u)*26px);margin-top:calc(var(--u)*2px)}
+#lf{-webkit-transform:translateY(-100%);transform:translateY(-100%);margin-top:calc(var(--u)*-5px)}#lo{margin-top:calc(var(--u)*5px)}
+#mh{font-size:calc(var(--u)*23px);color:var(--ink);margin-bottom:calc(var(--u)*2px)}
+.row{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;height:calc(var(--u)*56px);border-top:1px solid var(--line)}
+.bd{width:calc(var(--u)*30px);height:calc(var(--u)*30px);border-radius:50%;font-style:normal;font-weight:800;font-size:calc(var(--u)*9.5px);letter-spacing:.02em;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-flex-shrink:0;flex-shrink:0;margin-right:calc(var(--u)*10px)}
+.nm{-webkit-box-flex:1;-webkit-flex:1;flex:1;min-width:0}
+.nm span{display:block;font-size:calc(var(--u)*16px);font-weight:500;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nm u{display:block;height:calc(var(--u)*2.5px);border-radius:2px;margin-top:calc(var(--u)*5px);max-width:100%}
+.pick{position:relative;width:calc(var(--u)*76px);height:calc(var(--u)*38px);margin-left:calc(var(--u)*7px);border-radius:999px;border:1px solid #2A313A;background:#0E1217;font:inherit;cursor:pointer;
+ display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;
+ -webkit-transition:transform .15s ease,opacity .2s ease,background .2s ease,color .2s ease,border-color .2s ease;transition:transform .15s ease,opacity .2s ease,background .2s ease,color .2s ease,border-color .2s ease}
+.pick em{font-style:normal;font-size:calc(var(--u)*11px);font-weight:600;margin-right:calc(var(--u)*5px);opacity:.75}
+.pick span{font-size:calc(var(--u)*16px);font-weight:800;letter-spacing:-.01em}
+.yes{color:var(--g)}.no{color:var(--r)}
+.yes.sel{background:var(--g);border-color:var(--g);color:var(--deep)}.no.sel{background:var(--r);border-color:var(--r);color:#fff}
+.pick.dim{opacity:.38}.pick:active{-webkit-transform:scale(.97);transform:scale(.97)}
+#payout{margin-top:calc(var(--u)*8px);font-size:calc(var(--u)*13px);line-height:1.25;color:var(--mut);min-height:calc(var(--u)*34px);text-align:center;padding:0 2%}
+#payout.on{color:#DCE3E8}#payout b{color:var(--g);font-size:calc(var(--u)*17px);font-weight:800;margin:0 2px}
+#cta{position:relative;overflow:hidden;margin-top:calc(var(--u)*4px);width:100%;height:calc(var(--u)*50px);border:0;border-radius:999px;font:inherit;font-size:calc(var(--u)*17px);font-weight:800;color:var(--deep);background:var(--g);cursor:pointer}
+#legal{width:100%;margin-top:calc(var(--u)*10px);font-size:8.5px;line-height:1.38;color:rgba(190,200,208,.46);text-align:center;position:relative;z-index:1}
+/* ---- motion: base CSS is the finished layout; intro only via .play (removed at 2.6s); transform/opacity only ---- */
+#cta:after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:36%;background:linear-gradient(100deg,rgba(255,255,255,0),rgba(255,255,255,.45),rgba(255,255,255,0));transform:skewX(-20deg);animation:shine 4.2s ease-in-out 2.6s infinite}
+@keyframes shine{0%{left:-60%}38%,100%{left:135%}}
+@keyframes rise{from{opacity:0;transform:translateY(calc(var(--u)*12px))}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes spring{0%{opacity:0;transform:scale(.86)}60%{opacity:1;transform:scale(1.04)}100%{opacity:1;transform:none}}
+@keyframes ring{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.22,1.5);opacity:0}}
+@keyframes soft{0%,100%{transform:none}50%{transform:scale(1.03)}}
+@keyframes popsel{0%{transform:scale(.94)}60%{transform:scale(1.06)}100%{transform:none}}
+@keyframes bump{0%{transform:scale(.97)}60%{transform:scale(1.025)}100%{transform:none}}
+#stage.play #logo,#stage.play #promo{animation:fade .5s ease .05s both}
+#stage.play #title,#stage.play #sub{animation:rise .6s cubic-bezier(.2,.8,.2,1) .2s both}
+#stage.play #cap{animation:fade .5s ease .5s both}
+#stage.play .ln{stroke-dasharray:1;animation:draw 1.3s cubic-bezier(.3,.6,.2,1) .55s both}
+#stage.play .dot,#stage.play .lab{animation:fade .5s ease 1.55s both}
+#stage.play #mh{animation:fade .5s ease 1.0s both}
+#stage.play #rf{animation:rise .55s cubic-bezier(.2,.8,.2,1) 1.1s both}
+#stage.play #ro{animation:rise .55s cubic-bezier(.2,.8,.2,1) 1.25s both}
+#stage.play #payout{animation:fade .5s ease 1.45s both}
+#stage.play #cta{animation:rise .6s cubic-bezier(.2,.8,.2,1) 1.5s both}
+#stage.play #legal{animation:fade .8s ease 1.7s both}
+#stage.nudge #fy:after,#stage.nudge #fn:after{content:"";position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px;border-radius:inherit;border:1.5px solid currentColor;opacity:0;pointer-events:none;animation:ring 1.8s ease-out infinite}
+#stage.nudge #fn:after{animation-delay:.9s}
+#stage.nudge #fy,#stage.nudge #fn{animation:soft 1.8s ease-in-out infinite}#stage.nudge #fn{animation-delay:.9s}
+#stage #fy.pop,#stage #fn.pop,#stage #oy.pop,#stage #on.pop{animation:popsel .38s cubic-bezier(.3,1.4,.5,1) both}
+#stage #cta.ready{animation:bump .4s ease both}
+.swap{animation:rise .4s cubic-bezier(.2,.8,.2,1) both}
+/* phone held sideways (or touch tablet): two columns */
+@media (orientation:landscape) and (max-height:559px),(orientation:landscape) and (pointer:coarse){
+ #stage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto 1fr auto;-webkit-box-align:start;-webkit-align-items:start;align-items:start;-webkit-column-gap:3%;column-gap:3%;padding:calc(var(--u)*10px) calc(var(--u)*16px) calc(var(--u)*4px)}
+ #top{grid-column:1;grid-row:1}#mid{grid-column:1;grid-row:2;margin-top:calc(var(--u)*8px)}#bot{grid-column:2;grid-row:1 / 4;-webkit-align-self:center;align-self:center}
+ #legal{grid-column:1 / 3;grid-row:4;font-size:7.5px;margin-top:2px}
+ #chart{height:calc(var(--u)*118px)}.lab i{font-size:calc(var(--u)*10px)}.lab b{font-size:calc(var(--u)*20px);margin-top:calc(var(--u)*1px)}#lf{margin-top:calc(var(--u)*-3px)}#lo{margin-top:calc(var(--u)*3px)}
+}
+/* desktop browser (mouse, big window): centered 9:16 phone column. Touch devices never match. */
+@media (orientation:landscape) and (min-height:560px) and (pointer:fine){
+ html,body{background:#030405}
+ #stage{left:50%;right:auto;width:56.25vh;-webkit-transform:translateX(-50%);transform:translateX(-50%);box-shadow:0 0 0 1px #14191e,0 24px 70px rgba(0,0,0,.7)}
+ #legal{font-size:calc(var(--u)*8.5px)}
+}
+@media (prefers-reduced-motion:reduce){*{-webkit-animation:none!important;animation:none!important}}
+</style></head><body>
+<div id="stage">
+ <div class="blk" id="top"><svg id="logo" viewBox="0 0 772 226" xmlns="http://www.w3.org/2000/svg" aria-label="Kalshi"><path d="M255.677 58.1911C210.683 58.1911 183.381 78.5114 181.206 113.922H228.062C229.924 100.374 238.611 93.2917 253.814 93.2917C269.018 93.2917 277.396 100.064 277.088 110.842C276.775 119.156 271.501 122.852 258.16 124.7L238.923 127.164C195.484 132.398 175.002 148.717 175.002 177.967C175.002 207.218 195.48 226 229.611 226C251.331 226 267.776 218.302 278.017 203.522V222.61H326.422V117.924C326.422 78.5114 302.532 58.1911 255.677 58.1911ZM245.44 192.437C231.478 192.437 223.72 186.281 223.72 174.887C223.72 164.109 230.545 158.875 249.473 156.105L258.16 154.873C265.845 153.8 272.17 152.274 277.396 150.131V166.267C277.396 181.663 264.368 192.437 245.44 192.437ZM343.488 3.38607H393.135V222.61H343.488V3.38607ZM105.23 105.628L179.66 222.61H115.118L54.3009 121.934V222.61H0V3.38607H54.3009V99.102L119.464 3.38607H177.489L105.23 105.628ZM716.145 26.1705C716.145 12.0062 728.557 0 744.073 0C759.588 0 772 12.0062 772 26.1705C772 40.3347 759.588 52.3409 744.073 52.3409C728.557 52.3409 716.145 40.6407 716.145 26.1705ZM544.868 172.423C544.868 208.446 518.494 225.996 474.743 225.996C430.991 225.996 403.997 206.908 402.447 172.113H448.369C450.232 185.351 456.435 192.743 474.434 192.743C489.95 192.743 497.395 186.587 497.395 177.347C497.395 168.107 488.396 163.489 465.747 160.107C422.616 154.257 405.242 141.631 405.242 109.304C405.242 75.1293 436.582 58.1911 471.643 58.1911C509.186 58.1911 536.493 71.4293 540.218 108.688H495.225C493.054 96.9877 486.225 91.1376 471.951 91.1376C458.61 91.1376 451.161 97.2937 451.161 105.608C451.161 114.844 458.61 118.23 480.638 121.31C523.148 127.16 544.868 137.934 544.868 172.423ZM719.249 61.5771H768.896V222.61H719.249V61.5771ZM702.183 115.77V222.61H652.536V124.39C652.536 107.146 645.399 98.2197 629.884 98.2197C614.368 98.2197 603.51 108.072 603.51 127.47V222.61H553.863V3.38607H603.51V85.5617C611.32 70.1734 627.761 58.1911 651.603 58.1911C681.393 58.1911 702.179 76.9734 702.179 115.766L702.183 115.77Z"/></svg><div id="promo">Trade $25, get $55 &middot; Code <b>FREE55</b></div></div>
+ <div class="blk" id="mid">
+  <div class="fitrow" id="titleRow"><span id="title" class="cond">Green Bay vs New England</span></div>
+  <div id="sub">Sun, Nov 8 &middot; Who wins?</div>
+  <div id="chart"><div id="cap">Win probability &middot; since Oct 27</div>
+   <svg id="plot" viewBox="0 0 300 100" preserveAspectRatio="none" aria-hidden="true"><line x1="0" x2="300" y1="34" y2="34"/><line x1="0" x2="300" y1="50" y2="50"/><line x1="0" x2="300" y1="66" y2="66"/>
+    <path class="ln" pathLength="1" d="M0.0 62.63L3.6 52.53L7.1 55.33L10.7 55.33L14.2 55.33L17.8 58.70L21.4 55.33L24.9 58.70L28.5 57.02L32.0 57.02L35.6 53.09L39.1 50.28L42.7 53.09L46.3 56.46L49.8 55.33L53.4 60.95L56.9 59.82L60.5 60.95L64.1 60.95L67.6 60.95L71.2 60.95L74.7 60.95L78.3 61.51L81.9 61.51L85.4 61.51L89.0 61.51L92.5 61.51L96.1 61.51L103.2 61.51L106.8 61.51L110.3 61.51L113.9 61.51L117.4 61.51L121.0 60.95L124.6 61.51L128.1 61.51L131.7 60.95L135.2 60.39L142.4 60.39L145.9 59.82L149.5 60.39L156.6 60.39L160.2 60.39L163.7 59.26L167.3 59.26L170.8 58.14L178.0 58.14L181.5 57.58L188.6 58.14L192.2 58.14L195.7 58.14L199.3 58.14L202.9 58.14L206.4 58.70L210.0 58.14L213.5 58.14L217.1 58.14L220.7 57.58L224.2 57.58L227.8 57.58L231.3 58.70L234.9 58.70L238.5 58.70L242.0 58.14L245.6 55.33L249.1 49.16L252.7 47.47L256.2 45.23L259.8 53.09L263.4 57.02L266.9 56.46L270.5 55.89L274.0 56.46L277.6 57.02L281.2 51.96L284.7 57.58L288.3 57.58L291.8 56.46L295.4 56.46L299.0 55.89L300.0 55.33" stroke="#34C768"/><path class="ln" pathLength="1" d="M0.0 44.11L3.6 48.04L7.1 43.54L10.7 43.54L14.2 43.54L17.8 38.49L21.4 44.11L24.9 38.49L28.5 43.54L32.0 43.54L35.6 49.16L39.1 47.47L42.7 47.47L46.3 42.42L49.8 43.54L53.4 39.05L56.9 37.93L60.5 38.49L64.1 39.05L67.6 38.49L71.2 38.49L74.7 39.05L81.9 38.49L85.4 38.49L89.0 37.93L92.5 37.93L96.1 37.93L99.7 38.49L103.2 38.49L106.8 37.93L110.3 37.93L113.9 37.93L117.4 37.37L121.0 37.37L124.6 37.93L128.1 37.37L131.7 37.93L135.2 39.05L138.8 39.05L142.4 39.05L145.9 39.05L149.5 39.05L153.0 39.05L156.6 39.05L160.2 39.05L163.7 39.05L167.3 39.05L170.8 39.61L174.4 39.61L181.5 41.30L188.6 40.18L192.2 39.61L195.7 39.61L199.3 39.61L202.9 39.61L206.4 39.61L210.0 40.74L213.5 40.74L217.1 40.74L220.7 41.86L224.2 41.30L227.8 41.30L231.3 40.74L234.9 39.61L238.5 39.61L242.0 38.49L245.6 41.30L249.1 49.16L252.7 50.28L256.2 50.84L259.8 46.35L263.4 43.54L266.9 41.30L270.5 41.86L274.0 41.86L277.6 41.86L281.2 46.91L284.7 40.74L288.3 40.74L291.8 41.30L295.4 41.86L299.0 41.86L300.0 41.86" stroke="#E8485D"/></svg>
+   <span class="dot" style="top:55.3%;background:#34C768"></span><span class="dot" style="top:41.9%;background:#E8485D"></span>
+   <div class="lab cond" id="lf" style="top:41.9%;color:#E8485D"><i>NE</i><b>57%</b></div>
+   <div class="lab cond" id="lo" style="top:55.3%;color:#34C768"><i>GB</i><b>45%</b></div></div>
+ </div>
+ <div class="blk" id="bot"><div id="mh" class="cond">Markets</div>
+  <div class="row" id="rf"><i class="bd" style="background:#E8485D;color:#fff">NE</i><div class="nm"><span>New England</span><u style="background:#E8485D;width:57%"></u></div><button class="pick yes" id="fy"><em>Yes</em><span>57&cent;</span></button><button class="pick no" id="fn"><em>No</em><span>43&cent;</span></button></div><div class="row" id="ro"><i class="bd" style="background:#34C768;color:#06100c">GB</i><div class="nm"><span>Green Bay</span><u style="background:#34C768;width:45%"></u></div><button class="pick yes" id="oy"><em>Yes</em><span>45&cent;</span></button><button class="pick no" id="on"><em>No</em><span>55&cent;</span></button></div>
+  <div id="payout"><span id="payIn">Tap Yes or No to see what $10 pays</span></div><button id="cta">Trade on Kalshi</button></div>
+ <div id="legal">18+ only. Restrictions and eligibility requirements apply. Trading event contracts and trading leveraged products, including perpetual futures, involves significant risk and is not appropriate for everyone. Please carefully consider if it is appropriate for you in light of your personal financial circumstances. Kalshi products are not available in all jurisdictions. See kalshi.com/regulatory for more information. Market information may not reflect current prices or available trading opportunities. Prices are subject to change. Certain limitations apply. The offer is available to new users only, subject to the terms and conditions at kalshi.com/tc/55</div>
+</div>
+<script>
+/* Kalshi FREE55 Sunday 1-tap (app-UI). Prices = midpoints of Kalshi bid/ask for "New England to win" (57c) and "Green Bay to win" (45c), (GB @ NE), snapshot 2026-10-30 17:17 UTC; chart = Kalshi's own hourly history of both markets. Static, not live. MRAID 3.0, ES5. */
+(function(){"use strict";
+ var M={f:{n:"New England",y:57},o:{n:"Green Bay",y:45}};
+ var STORE={ios:"https://apps.apple.com/us/app/kalshi/id1632713844",android:"https://play.google.com/store/apps/details?id=com.kalshi.mobile"};
+ function openStore(){var u=STORE[/iPhone|iPad|iPod/i.test(navigator.userAgent||"")?"ios":"android"];
+  if(typeof mraid!=="undefined"&&mraid&&typeof mraid.open==="function"){mraid.open(u);}else if(window.open){window.open(u,"_blank");}}
+ var st=document.getElementById("stage"),pay=document.getElementById("payout"),cta=document.getElementById("cta"),payIn=document.getElementById("payIn");
+ var ids=["fy","fn","oy","on"],el={},sel=null,taps=0,started=false,nt=null,nudging=false,playing=false;
+ for(var i=0;i<ids.length;i++){el[ids[i]]=document.getElementById(ids[i]);}
+ function cls(){st.className=(playing?"play":"")+(nudging?" nudge":"");}
+ function swapIn(e){e.className="";void e.offsetWidth;e.className="swap";}
+ function countTo(e,to,ms){var t0=Date.now();
+  function fin(){e.innerHTML="$"+to.toFixed(2);}
+  (function step(){var p=Math.min(1,(Date.now()-t0)/ms),k=1-Math.pow(1-p,3);
+   if(p<1){e.innerHTML="$"+(to*k).toFixed(2);setTimeout(step,24);}else{fin();}})();
+  setTimeout(fin,ms+120);}   /* guarantee: even if timers are throttled, the real amount always lands */
+ function scale(){var w=window.innerWidth,h=window.innerHeight,u,max=1.12;
+  var framed=!!(window.matchMedia&&window.matchMedia("(orientation:landscape) and (min-height:560px) and (pointer:fine)").matches);
+  if(framed){w=h*9/16;u=Math.min(w/375,h/760);max=1.4;}
+  else if(w>h){u=Math.min(h/330,w/760);}else{u=Math.min(w/375,(h-96)/640);}
+  u=Math.max(.55,Math.min(max,u));document.documentElement.style.setProperty("--u",u);fit();}
+ function fit(){var row=document.getElementById("titleRow"),s=row.firstChild,base,i=0;if(!s)return;
+  s.style.fontSize="";base=parseFloat(window.getComputedStyle(s).fontSize);
+  while(s.offsetWidth>row.clientWidth-2&&base>9&&i<80){base-=1;s.style.fontSize=base+"px";i++;}}
+ function show(){var k=sel.charAt(0),side=sel.charAt(1)==="y"?"Yes":"No",c=side==="Yes"?M[k].y:100-M[k].y,amt=(10/(c/100)).toFixed(2);
+  var cond=side==="Yes"?M[k].n+" wins":M[k].n+" doesn&rsquo;t win";
+  payIn.innerHTML="$10 on "+M[k].n+" "+side+" pays <b id='amt'>$0.00</b> if "+cond;pay.className="on";swapIn(payIn);
+  countTo(document.getElementById("amt"),parseFloat(amt),650);
+  cta.innerHTML="Trade "+M[k].n+" "+side+" at "+c+"&cent;";cta.className="";void cta.offsetWidth;cta.className="ready";}
+ function pick(id){if(!started)return;if(nt){clearTimeout(nt);nt=null;}nudging=false;cls();taps++;
+  if(sel!==id){sel=id;for(var j=0;j<ids.length;j++){var b=ids[j],on=b===id;el[b].className="pick "+(b.charAt(1)==="y"?"yes":"no")+(on?" sel pop":" dim");}show();if(taps>=3)openStore();}
+  else{openStore();}}
+ function start(){if(started)return;started=true;scale();playing=true;cls();
+  nt=setTimeout(function(){if(!sel){nudging=true;cls();}},2300);
+  setTimeout(function(){playing=false;cls();},2600);}
+ for(var j=0;j<ids.length;j++){(function(b){el[b].addEventListener("click",function(){pick(b);},false);})(ids[j]);}
+ cta.addEventListener("click",function(){if(started)openStore();},false);
+ window.addEventListener("resize",scale,false);
+ function onView(v){if(v){started?null:start();}}
+ function ready(){mraid.addEventListener("viewableChange",onView);if(mraid.isViewable())start();}
+ scale();
+ if(typeof mraid==="undefined"){start();}else if(mraid.getState()==="loading"){mraid.addEventListener("ready",ready);}else{ready();}
+})();
+</script></body></html>
